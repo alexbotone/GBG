@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Reciclarea deseurilor</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Alex Botone">
+    <meta name="description" content="Lucrare de disertatie - SADE, Fsega, UBB">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://kit.fontawesome.com/e4fd43771c.js" crossorigin="anonymous"></script>
+    <!--  made on my personal email-->
+
+    <style>
+
+ img#preview {
+    width: 26rem;
+    height: 26rem;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+ }
+
+#classifyImage,
+ #about{
+    display:block;
+    text-align: center;
+    margin:0 auto;
+    min-height: 79vh;
+}
+h3.classifTitle {
+    text-transform: capitalize;
+    padding-bottom: 0;
+}
+
+
+
+
+
+.container-fluid {
+  overflow: hidden;
+  background-color:  #3c92d6;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: wheat;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: wheat;
+  color: #232a34;
+}
+
+.topnav a.active {
+  background-color: wheat;
+  color: #232a34;
+}
+
+a {
+  cursor: alias;
+  color: wheat;
+  font-size: 90%;
+}
+
+h5{
+  color: wheat;
+  padding-top: 4%;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-bottom: 4px;
+  background-color:  #3c92d6;
+}
+
+h4.wheat{
+  color: wheat;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-bottom: 2%;
+  background-color:  white;
+}
+
+h4{
+  color: black;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-bottom: 2%;
+  background-color:  white;
+}
+
+h3{
+  color: #0d0d0d;
+  background-color: white;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  padding-left: 4px;
+}
+
+h2{
+  color: wheat;
+  background-color: #232a34;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  padding-left: 4px;
+}
+
+@media screen and (min-width: 601px) {
+  h5 {
+    font-size: 25px;
+  }
+  h4 {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 30px;
+
+  }
+
+  .image-upload img
+  {
+      width: 80px;
+      cursor: pointer;
+  }
+
+  #upload-web {
+    display: block;
+  }
+
+  #upload-mobile {
+    display: none;
+  }
+
+  button.classify-button {
+        margin-top: 5rem;
+  }
+
+  .classify-button{
+    border: 2px;
+    background: none;
+    background-color: #FF9900;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    width: 250px;
+    padding: 10px;
+    border-radius-top-right: 5px;
+    -moz-border-radius-top-right: 5px;
+    -webkit-border-radius-top-right: 5px;
+    border-radius-bottom-right: 5px;
+    -moz-border-radius-bottom-right: 5px;
+    -webkit-border-radius-bottom-right: 5px;
+    cursor:pointer;
+  }
+
+  #logo-img{
+    height: 140px;
+    width: 580px;
+  }
+
+  #notFound{
+     font-size: 400px;
+}
+
+}
+
+@media screen and (max-width: 600px) {
+  h5 {
+    font-size: 14px;
+  }
+  h4 {
+    font-size: 15px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 12px;
+  }
+
+  .image-upload img
+  {
+      width: 40px;
+      cursor: pointer;
+  }
+
+  #upload-web {
+    display: none;
+  }
+
+  #upload-mobile {
+    display: block;
+  }
+
+  button.classify-button {
+     margin-top: 0rem;
+  }
+
+
+  .classify-button{
+    border: 0px;
+    background: none;
+    background-color: #FF9900;
+    color: black;
+    font-size: small;
+    font-weight: bold;
+    width: 195px;
+    padding: 10px;
+    border-radius-top-right: 5px;
+    -moz-border-radius-top-right: 5px;
+    -webkit-border-radius-top-right: 5px;
+    border-radius-bottom-right: 5px;
+    -moz-border-radius-bottom-right: 5px;
+    -webkit-border-radius-bottom-right: 5px;
+    cursor:pointer;
+
+  }
+
+  #logo-img{
+    height: 120px;
+    width: 360px;
+  }
+
+  #notFound{
+     font-size: 250%;
+     padding-top: 9%;
+     padding-bottom: 9%;
+}
+
+}
+
+body{
+  background-color: white;
+  font-family: 'Times New Roman';
+  font-size: 17px;
+}
+
+.classy_frame{
+  position: relative;
+  display: block;
+  border: solid;
+  border-radius: 7px;
+  overflow: hidden;
+  box-shadow: none;
+  transform: scale(0.98) translateY(5px);
+  padding-top: 2%;
+  margin-bottom: 3%;
+
+
+
+}
+.classy_frame:hover{
+  box-shadow: 12px 12px 12px #82B9E5;
+  transition: all ease 0.4s;
+}
+
+hr {
+  border:6px solid #232a34;
+  border-radius: 5px;
+  background-color: wheat;
+
+}
+
+.image-upload > input
+{
+    display: none;
+}
+
+#loading {
+    background: white url("{{ url_for('static', filename='uploads/loading.gif') }}") no-repeat center center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9999999;
+    display: none;
+}
+
+#creditsAuthor {
+    font-size: 16px;
+}
+
+.downloadableSource {
+    color: #3c92d6;
+    font-size: 16px;
+
+}
+#nameOfTheSystem,
+#nameOfTheSystem:hover,
+#nameOfTheSystem:active,
+#nameOfTheSystem:visited{
+    cursor:normal;
+    color: wheat;
+}
+
+#firstText{
+    padding-bottom: 0;
+}
+
+#mainWindow{
+        padding-bottom: 8rem;
+
+}
+
+#footerTitle{
+     background-color:   #143a59;
+}
+
+#firstText{
+    font-size: 23px;
+    color: black;
+}
+
+
+
+
+    </style>
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='uploads/favicon.ico') }}" type="image/x-icon">
+    {{ JSGlue.include() }}
+    <!-- Pt url_for() din js , ca la proiectul de clienti pasivi -->
+    <!-- install jsglue din terminal daca fail-uieste 404 pe imagini -->
+</head>
+<body>
+
+<nav class="navbar" style="background-color: #3c92d6;">
+    <div class="container">
+
+        <!-- Add navbar content -->
+        <div class="container-fluid">
+
+            <!-- Include .navbar-header class
+                 in <div>  (optional)-->
+            <div class="navbar-header">
+                <a class="navbar-brand" pointer-events="none" href="#" id="nameOfTheSystem" >
+                   GBG Selection
+                </a>
+            </div>
+
+            <!-- Include navbar list -->
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/">
+                    Acasa
+                </a></li>
+                <li><a href="/classification">Clasificare imagini</a></li>
+<!--                <li><a href="/live-classification">Clasificare Real Time</a></li>-->
+                <li><a href="/api-call">Obtinere call Api</a></li>
+                <li><a href="/about">Despre noi</a></li>
+                <li><a href="/info">Informații lucrare</a></li>
+            </ul>
+        </div>
+<!--    </nav>-->
+    </div>
+
+</nav>
+<br>
+
+<!-- Modal -->
+<div class="modal fade" id="errorPopup" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content classy_frame" style="background-color: #3c92d6;">
+            <div class="modal-header">
+                <p class="modal-title" id="errorTitle" style="color:wheat;font-size:large;">Modal title</p>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                        style="color:wheat;font-size: large;">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p style="color:wheat; font-size:medium;" id="errorMessage" style="color:wheat;"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                        style="background-color: #FF9900; color: black">OK
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="loading">
+    <br>
+    <h3 style="text-align: center;">Clasificare in curs...</h3>
+</div>
+
+{% block content %}
+{% endblock %}
+
+<footer style="background-color: #3c92d6;">
+    <div class="container" id="footerContainer">
+        <div class="row">
+            <h4 id="footerTitle" class="wheat" style="text-align:center">Sistem de clasificare a de&scedil;eurilor</h4>
+            <hr>
+            <div class="col-xs-6 col-sm-6">
+                <h5>
+                    <a href="https://www.kaggle.com/mostafaabla/garbage-classification" target="_blank"><i
+                            class="fab fa-kaggle"></i> Dataset principal</a>
+                </h5>
+                <h5>
+                    <a href="https://github.com/alexbotone" target="_blank"><i class="fas fa-file-code"></i> Git Hub
+                        repo</a>
+                </h5>
+                <h5>
+                    <a href="https://colab.research.google.com/drive/1BUlXKRmQy_d1nIewRT6KKePny7xUIRLR?usp=sharing"
+                       target="_blank"><i class="fas fa-folder-open"></i> Google Colaboratory Notebook</a>
+                </h5>
+            </div>
+            <div class="col-xs-0 col-sm-4">
+
+            </div>
+            <div class="col-xs-6 col-sm-5">
+
+                <img src="{{ url_for('static', filename = 'uploads/recycle_heart.png') }}" alt="resicle_icon"
+                     height="40%" width="50%" title="resicle_icon" class="classy_frame" style="padding: 1%;"
+                     align="right">
+
+            </div>
+        </div>
+        <br>
+        <div class="row" id="creditsAuthor" style="background-color: #143a59">
+            <p style="color:wheat; text-align: center;"><strong>&#169; Alex Bo&#355;one</strong></p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

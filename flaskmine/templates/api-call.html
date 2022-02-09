@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container">
+    <h3>Cerinte</h3>
+    <br>
+    <p>Pentru rularea scriptului care realizeaza clasificarea deseurilor propus de acest sistem trebuie decis modul in
+        care se doreste aceasta rulare. Daca se urmareste rularea scriptului online, atunci variabila `url` din cardul
+        scriptului trebuie adaptata in functie de domeniul utilizat de sitem, pe care a fost publicat pe internet. Se
+        poate decide publicarea sitemului de catre dezvoltator sau o adaptare a clientului care presupune o publicare
+        individuala in functie de cerintele clientului.</p>
+       <p>Daca se doreste o rulare offline, atunci proiectul trebuie clonat din github (link in partea de jos a paginii),
+       si rulat local cu uneltele descrise in fisierul `requirements.txt` si urmariti pasii din `readme.md`. Atentie in
+           acest proces trebuie realizat de un tehnician, insa dezvoltatorul poate sa ofere suport tehnic.</p>
+    <br>
+     <h3>Script rulare continua a API-ului</h3>
+    <br>
+    <a class="downloadableSource" download  href="{{ url_for('static', filename='scripts/retry_bulk.py') }}"><p><strong>Download script</strong></p></a>
+    <br>
+    <p>  Descarcati si rulati scriptul local si adaugati locatia imaginii. In caz de succes, API-ul raspunde in format JSON cu elementele
+        "predicted_value"- clasa in limba engleza, "probability"- probabilitatea de adevar, "romanian_translation"-
+        traducerea in limba romana a clasei. Apoi permite adaugarea unei noi imagini, sau iesirea( caz in care trebuie sa
+        se completeze cu 'exit'. In cazut in care scritul raspunde cu "invalid format", trebuie observat ca se permite
+        incarcarea doar fisierelor de tipul .jpg, .png, .jpeg, iar daca raspunde cu 'Fisierul nu exista!', trebuie sa ne
+        asiguram ca locatia pe care am adaugat-o este reala si imaginea exista.</p>
+    <br>
+    <p>Scriptul permite rularea de pe orice sistem de operare cu cerinta ca Python 3 sa fie instalat. Scriptul se poate
+        utiliza manual de catre o persoana, caz in care masina necesita un monitor de supraveghere, sau poate rula automat,
+        cu ajutorul unui automatism de incarcare de imagini in terminal. </p>
+    <br>
+    <br>
+    <h3>Postman call</h3>
+    <br>
+    <br>
+    <p>Se importa call-ul de mai jos in aplicatia Postman si se completeaza cu locatia fisierului dumneavoastra. In caz
+        de succes, se raspunde in format JSON cu elementele "predicted_value"- clasa in limba engleza, "probability"-
+        probabilitatea de adevar, "romanian_translation"- traducerea in limba romana a clasei</p>
+    <p> In cazul in care call-ul raspunde cu "File type is not allowed" - status code 500, inseamna ca fisierul incarcat
+    nu este suportat. Pentru aceasta trebuie sa incarcat un fisier in urmatoarele formate: .jpg, .jpeg sau .png.</p>
+    <pre class="line-numbers">
+   <code class="language-https">
+      curl --location --request POST 'http://gbgselection.ro/api/classifywaste' \
+       --form 'files[]=@"TO COMPLETE WITH YOUR IMAGE PATH"'
+   </code>
+</pre>
+    <br>
+    <br>
+    <br>
+
+</div>
+
+{% endblock %}

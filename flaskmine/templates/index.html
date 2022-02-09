@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container">
+    <h3>Sistem inteligent de selectare a deseurilor</h3>
+    <br>
+    <p>Sistemul inteligent propus vine în ajutorul organizațiilor abilitate oferind soluții eficiente de sortare, care
+        au la bază automatisme și maleabilitate din punct de vedere al punerii în practică. Programul oferă atât acces
+        online, cât și offline pentru a rula într-o astfel de organizație, și se poate adapta facil nevoilor clientului.
+        Se oferă un serviciu de backend stabil și eficient pentru o soluție automatizată complet, dar și o soluție cu un
+        client grafic sub forma acestui site web, unde se prezintă atât ideea cât și funcționalitatea programului.</p>
+    <p>Acest produs propunere o reducere a costurilor pe termen lung si o crestere a cantitatii de deseuri sortate. Pe
+        de alta parte reduce riscurile la care sunt expusi angajatii, bazandu-se mai mult pe observatie in l2ocul sortarii
+        manuale si nu propune inlocuirea personalului, ci o preluare de atributii periculoase pentru oameni.</p>
+     <h3>Modul de functionare</h3>
+    <br>
+    <p>Sistemul asteapta ca input o imagine sau o serie de imagini, pe care le proceseaza si realizeaza predictii pe
+        baza modelelor realizate de retelele neuronale. Apoi se analizeaza predictiile iar daca rezultatul corespunde cu
+        cerintele sistemului (probabilitate mare, clasificare repetata in aceeasi clasa, etc.) acesta incadreaza imaginea
+        in clasa de deseu de care apartine. In cazul in care sistemul nu poate sa ofere o clasificare sigura, acesta nu
+        clasifica imaginea pentru a evita contaminarea unui lot intreg de deseuri recilcabile.</p>
+    <h3>Sistemul clasifica deseul din imagine intr-una din categoriile:</h3>
+     <div class="col-md-4 col-eq-height classy_frame">
+        <ul>
+             <li>Baterii</li>
+             <li>Organic</li>
+             <li>Sticla maro</li>
+             <li>Carton</li>
+             <li>Imbracaminte</li>
+
+        </ul>
+     </div>
+    <div class="col-md-4 col-eq-height classy_frame">
+        <ul>
+             <li>Electronice</li>
+             <li>Sticla verde</li>
+             <li>Becuri</li>
+             <li>Metal</li>
+             <li>Hartie</li>
+        </ul>
+     </div>
+     <div class="col-md-4 col-eq-height classy_frame">
+         <ul>
+             <li>Plastic</li>
+             <li>Incaltaminte</li>
+             <li>Deseu nereciclabil</li>
+             <li>Sticla alba</li>
+             <li>Neclasificat</li>
+        </ul>
+     </div>
+    <br>
+    <br>
+
+</div>
+
+{% endblock %}
