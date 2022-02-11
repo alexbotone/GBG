@@ -180,7 +180,7 @@ data = {
             "nereciclabil, pentru a evita stocarea unui deseu care se poate recicla.",
             "rItgc45AmdU", "XlB277xDxzw"]
 }
-# model = None
+
 
 output_class = ['battery', 'biological', 'brown-glass', 'cardboard', 'clothes', 'e-waste', 'green-glass', 'light-bulbs',
                 'metal', 'paper', 'plastic', 'shoes', 'trash', 'white-glass', 'unrated']
@@ -194,11 +194,13 @@ def allowed_file(filename):
 
 def load_artifacts():
     global model1, model2, model3
+
     global models
 
     model1 = tf.keras.models.load_model("./model/model_xception8744.h5")
     model2 = tf.keras.models.load_model("./model/model_xception8851.h5")
     model3 = tf.keras.models.load_model("./model/model_VGG19.h5")
+
     models = [model1, model2, model3]
 
 

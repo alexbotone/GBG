@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 from keras.models import load_model
-
+# todo if we need a webcamera we can open like this
 cap = cv2.VideoCapture(0)
 
 # Check if the webcam is opened correctly.
