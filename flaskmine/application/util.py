@@ -10,17 +10,17 @@ data = {
             "Reciclarea bateriilor are ca scop eliminarea acestora din celelalte deseuri solide, deoarece aceste "
             "contin o serie de metale grele si substane chimice toxice si greu de eliminat. Aceste substante "
             "contamineaza solul si vegetalele ce cresc pe acesta, fara posibilitate de tratare. Desi este foarte "
-            "scumpa reciclarea bateriiol aceasta este benefica deoarece materialele metalice se reutilizeaza la "
-            "ceerea de noi baterii, iar carbonul este utilizat la topirea metalelor.<br><br> Stiati ca Nichel-Cadmiu "
+            "scumpa reciclarea bateriilor aceasta este benefica deoarece materialele metalice se reutilizeaza la "
+            "crearea de noi baterii, iar carbonul este utilizat la topirea metalelor.<br><br> Stiati ca Nichel-Cadmiu "
             "utilizat în baterii se retrateaza si se poate refolosi de pana la 5 ori?",
             "bHbgCvNBFW0", "Jw-hinWmFwE"],
     "biological":
         [
             "biologic",
-            "Deseurile biologice se stocheaza in gropi de unoi separat pentru descompunere sau pentru crearea de "
+            "Deseurile biologice se stocheaza in gropi de gunoi separat pentru descompunere sau pentru crearea de "
             "compost, benefic pentru imbogatirea solului. Inca din cele mai vechi timpuri oamenii foloseau compostul "
             "ca ingrasamant natural si il stocau de obicei in apropiere de gradina de legume. De obicei toate "
-            "deseurile biologice se descompun total in 2-3 ani, iar volumul scade cu aproximati 65%, "
+            "deseurile biologice se descompun total in 2-3 ani, iar volumul scade cu aproximativ 65%, "
             "astfel ca gropile de deseuri biodegradabile se pot refolosi, acestea se pot considera fabrici de "
             "ingrasamant gratuit.<br><br> Stiati ca din compost se poate realiza un sistem de incalzire alternativa "
             "pentru case? ",
@@ -46,26 +46,26 @@ data = {
             "uscare se realizeaza un sul de carton, care se refoloseste de catre fabricile care produc ambalaje din "
             "carton, Pentru o rezistenta sporita in compozitie se adauga si celuloza virgina in proportie de cel "
             "putin 5%. Cartonul se poate recicla de 4-5 ori, iar apoi se poate reutiliza la confectia de mobilier si "
-            "ucarii ecologice sau hartie igienica. Pentru reciclare cartonul nu poate contine urme de alimente, apa, "
+            "jucarii ecologice sau hartie igienica. Pentru reciclare cartonul nu poate contine urme de alimente, apa, "
             "plastic sau alte substante <br><br>Stiati ca de cele mai multe ori capacul cutiei de pizza se poate "
-            "reutiliza?",
+            "recicla?",
             "jFYALKk7CIA", "HBGHa6xGwrY"],
     "clothes":
         [
             "imbracaminte",
             "Hainele utilizate se recicleaza in 3 moduri: reciclare prin curatare si donare catre organizatii "
-            "caritabile, tranformarein fibra textila sau incinerare pentru productia de ciment. Pentru realizarea de "
-            "fibre, se extrag separat particulele d polieste, celuloza, bumbac si sedizolva chimic pentru realizarea "
+            "caritabile, tranformarea in fibra textila sau incinerare pentru productia de ciment. Pentru realizarea de "
+            "fibre, se extrag separat particulele de poliester, celuloza, bumbac si se dizolva chimic pentru realizarea "
             "de noi fire textile, la fel de rezistente, pentru producerea de noi produse. Companiile care "
             "comercializeaza haine din bumbac sunt obligate sa comercializeze haine din bumbac reciclat in proportie "
-            "de minim 10%. Din fibra mai putin claitativa se produc covoare, lavete sau izolatii. <br><br> Stiati ca "
-            "peste 50% din tapitetiile automobilelelor sunt produse din textile reciclate?",
+            "de minim 10%. Din fibra mai putin calitativa se produc covoare, lavete sau izolatii. <br><br> Stiati ca "
+            "peste 50% din tapiteriile automobilelelor sunt produse din textile reciclate?",
             "Drw-LL3sQys", "pv_OP0B4RJo"],
     "e-waste":
         [
             "electronic",
             "Deseurile electronice sunt in cea mai mare masura electrocasnicele uzate si sunt destinate dezmembrarii, "
-            "sortarii pe categorii de elemente, topire, returnare si reutilizare in crearea de noi electrocasnice? "
+            "sortarii pe categorii de elemente, topire, returnare si reutilizare in crearea de noi electrocasnice. "
             "Expansiunea rapida a tehnologiei duce la o cantitate foarte mare de deseuri electronice, "
             "iar unele materiale precum bromul, bariliul sunt extrem de toxice. Astfel reciclarea electrocasnicelor "
             "face ca materialele scumpe si finite se pot reutiliza, iar natura nu este afectata. <br><br> Stiati ca "
@@ -87,26 +87,26 @@ data = {
     "light-bulbs":
         [
             "bec",
-            "Mercurul extrem de toxic din componenta becurilor dauneaza atat oamenilor si animaleleor cat si solului. "
-            "Exista pecuri HID care contin inclusit materiale radioactive. De obicei stocarea becurilor duce la "
-            "spargerea acestora , si astfel, la incapacitatea de reciclare, Prin reciclarea becurilor stica se poate "
-            "reutiliza, metalul se poate trasnforma in alte electonice care necesita conductibilitate a curentului "
+            "Mercurul extrem de toxic din componenta becurilor dauneaza atat oamenilor si animalelor cat si solului. "
+            "Exista becuri HID care contin inclusiv materiale radioactive. De obicei stocarea becurilor duce la "
+            "spargerea acestora , si astfel, la incapacitatea de reciclare, prin reciclarea becurilor sticla se poate "
+            "reutiliza, metalul se poate transforma in alte electronice care necesita conductibilitate a curentului "
             "electric, iar conectorii se pot refolosi la fabricarea altor becuri. Practic tot becul se poate recicla, "
             "astfel ca nimic nu se pierde, iar metalul din filamentul becului este extrem de scump, din cauza "
             "cantitatilor reduse. <br><br> Stiati ca becurile LED nu contin mercur, si au o durata de viata mult mai "
-            "lunga in comparatie cu becurile clasice incandescente? Un alt avantaj este economia de curent elcetric.",
+            "lunga in comparatie cu becurile clasice incandescente? Un alt avantaj este economia de curent electric.",
             "iYi8hfbIcxo", "IMt4klELO0E"],
     "metal":
         [
             "metal",
-            "In procesele industrile se utilizeaza zilnic sute de tone de metal. Cele mai utilizate metale sunt fierul,"
-            " aluminiul, cupru, zincul, plumbul si nichelul, iar cele mai pretioase sunt aurul, platina, "
+            "In procesele industriale se utilizeaza zilnic sute de tone de metal. Cele mai utilizate metale sunt fierul,"
+            " aluminiul, cuprul, zincul, plumbul si nichelul, iar cele mai pretioase sunt aurul, platina, "
             "argintul. Multe din aceste metale devin toxice prin oxidare, iar pretul lor este foarte ridicat. "
             "Epuizarea metalelor ar putea duce rapid la o criza mondiala, iar pentru atenuarea oricaror eventuale "
-            "crize economice, sau de material, reciclarea poate insemna salvare. De altfel reciclarea metalelor se "
+            "crize economice, sau de materiale, reciclarea poate insemna salvare. De altfel reciclarea metalelor se "
             "realizeaza destul de usor si ieftin, si este practicata din cele mai vechi timpuri.<br><br> Stiati ca "
             "primul material reciclat constient de om a fost fierul? Fabricarea unei unelte noi dintr-o unealta uzata "
-            "este considerata prima forma e reciclare.",
+            "este considerata prima forma de reciclare.",
             "2Fou9c3ZB-w", "jYAZEPNxdl0"],
     "paper":
         [
@@ -127,7 +127,7 @@ data = {
             "materialului in produse noi utile. Din cauza simbolurilor gresite intentionat de pe ambalaje si a "
             "numeroaselor obstacole mai putin de 10% din plastic a fost vreodata reciclat. Cea mai mare incercare a "
             "reciclarii plasticului este pretul. Inca din 1970 era cunoscut faptul ca reciclarea produselor din "
-            "platic este o provocare din cauza elementelor tehnice necesare, foarte scumpe, pentru un produs foarte "
+            "plastic este o provocare din cauza elementelor tehnice necesare, foarte scumpe, pentru un produs foarte "
             "ieftin realizat din plastic virgin. Abia din 2019 exista reglementari mondiale privind obligativitatea "
             "reciclarii plasticului pentru companiile care il utilizeaza, cu toate acestea s-au gasit solutii pentru "
             "cresterea cantitati de plastic virgin utilizat, in contra reglementarilor. <br><br>Stiati ca peste 40% "
@@ -137,7 +137,7 @@ data = {
         [
             "incaltaminte",
             "Incaltaintea incepe ciclul de reciclare prin impartirea in functie de tipul de materiale folosite(piele, "
-            "textil, plastic, cauciuc) iar apoi sesepara talpa de restul incaltarii. Dupa clasificare, materialele "
+            "textil, plastic, cauciuc) iar apoi se separa talpa de restul incaltarii. Dupa clasificare, materialele "
             "precum plasticul, textilele se macina pentru reutilizare, iar pielea se stocheaza separat deoarece nu se "
             "poate recicla, astfel ca se incinereaza. Inainte de reciclarea propriu zisa incaltamintea in stare buna "
             "este curatata si preluata de organizatii sociale in scopul donarii. O parte din piele este reutilizata "
@@ -147,14 +147,15 @@ data = {
     "trash":
         [
             "deseu nereciclabil",
-            "Desurile nereciclabile sunt deseurile care nu mai pot transforma in ceva util pentru omenire. De cele "
-            "mai mule ori aceste ajung in stouri imense in depozite unde urmeaza sa ramana pana la descompunere. De "
-            "cele mai multe ori in gunoiul nereciclabil ajung foarte multe desuri cu potential de reciclare, "
-            "care nu a ajuns sa fie sortat. De cele mai multe ori se cauta solutii pentru micsorarea cantitatii de "
+            "Desurile nereciclabile sunt deseurile care nu se mai pot transforma in ceva util pentru omenire. De cele "
+            "mai mule ori aceste ajung in stoucri imense in depozite unde urmeaza sa ramana pana la descompunere sau "
+            "incinerare pentru productia de ciment. De "
+            "cele mai multe ori in gunoiul nereciclabil ajung foarte multe deseuri cu potential de reciclare, "
+            "care nu a ajuns sa fie sortate. De cele mai multe ori se cauta solutii pentru micsorarea cantitatii de "
             "deseu nereciclabil, iar o noua tehnologie propune o solutie de distrugere a acestora, care genereaza "
             "inclusiv energie. Din nefericire inca nu se pune accentul pe distrugerea deseurilor nereciclabile, "
             "date fiind problemele generate de desurile reciclabile.<br><br> Stiati ca o punga de plastic cu folie de "
-            "aluminiu asteapta 1000 cel putin pentru descompunere?",
+            "aluminiu asteapta 1000 de ani cel putin pentru descompunere?",
             "I_1mJUyMSzY", "N9R1mMiSlM8"],
     "white-glass":
         [
