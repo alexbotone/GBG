@@ -7,7 +7,7 @@ from flask_jsglue import \
 from werkzeug.utils import secure_filename
 
 from application import util
-from flaskmine.application.toggles import get_toggle_save_images
+from flaskmine.application.toggles import get_toggle_save_images, get_toggle_save_images_per_category
 from flaskmine.application.util import allowed_file
 
 application = Flask(__name__)
@@ -16,7 +16,6 @@ logger.propagate = True
 # JSGlue is use for url_for() working inside javascript which is help us to navigate the url
 jsglue = JSGlue()  # create a object of JsGlue
 jsglue.init_app(application)  # and assign the app as a init app to the instance of JsGlue
-
 
 util.load_artifacts()
 
@@ -97,14 +96,21 @@ def classifywaste():
     # save the image to upload
     basepath = os.path.dirname(__file__)
     image_path = os.path.join(basepath, "static/new_uploads", secure_filename(image_data.filename))
-    logger.info("before save image---------------------")
-    if get_toggle_save_images():
-        image_data.save(image_path)
-        logger.warning("Image Saved")
-    logger.info('after save')
+    image_path_category = os.path.join(basepath, "static/cath_uploads", secure_filename(image_data.filename))
+    logger.info("before save image--")
+    image_data.save(image_path)
 
     predicted_value, romanian_translation, details, video1, video2, probability = util.classify_waste(image_path)
-    # os.remove(image_path)
+
+    if get_toggle_save_images():
+        logger.warning("Image Saved")
+    elif get_toggle_save_images_per_category():
+        image_data.save(image_path_category.replace("/cath_uploads", "/cath_uploads/" + predicted_value))
+        logger.warning("Image Saved in category: " + predicted_value)
+        os.remove(image_path)
+    else:
+        os.remove(image_path)
+
     return jsonify(predicted_value=predicted_value, romanian_translation=romanian_translation, details=details,
                    video1=video1, video2=video2, probability=probability)
 
@@ -158,4 +164,3 @@ def page_not_found(e):
 if __name__ == "__main__":
     # context = ('local.crt', 'local.key')
     application.run(host="gbgselection.ro", port=80)  # ssl_context=context)
-
