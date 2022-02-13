@@ -19,7 +19,8 @@ jsglue.init_app(application)  # and assign the app as a init app to the instance
 
 util.load_artifacts()
 
-
+TOGGLE_SAVE_IMAGES = get_toggle_save_images()
+TOGGLE_SAVE_IMAGES_PER_CATEGORY = get_toggle_save_images_per_category()
 # home page
 @application.route("/")
 def home():
@@ -65,7 +66,7 @@ def upload_file():
             image_path = os.path.join(basepath, "uploads", secure_filename(file.filename))
             file.save(image_path)
 
-            if get_toggle_save_images():
+            if TOGGLE_SAVE_IMAGES():
                 logging.warning("Image saved")
                 file.save(os.path.join(application.config['/static/new-uploads'], filename))
 
@@ -102,9 +103,9 @@ def classifywaste():
 
     predicted_value, romanian_translation, details, video1, video2, probability = util.classify_waste(image_path)
 
-    if get_toggle_save_images():
+    if TOGGLE_SAVE_IMAGES:
         logger.warning("Image Saved")
-    elif get_toggle_save_images_per_category():
+    elif TOGGLE_SAVE_IMAGES_PER_CATEGORY:
         image_data.save(image_path_category.replace("/cath_uploads", "/cath_uploads/" + predicted_value))
         logger.warning("Image Saved in category: " + predicted_value)
         os.remove(image_path)
