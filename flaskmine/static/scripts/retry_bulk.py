@@ -1,8 +1,9 @@
 import requests
+import time
 
-accepted_formats = ('.png', '.jpg', '.jpeg','exit')
-#url = 'http://127.0.0.1:5000/api/classifywaste'
-url = 'http://gbgselection.ro/api/classifywaste'
+accepted_formats = ('.png', '.jpg', '.jpeg', 'exit')
+# url = 'http://127.0.0.1:5000/api/classifywaste'
+url = 'http://gbgselection.ro:80/api/classifywaste'
 
 
 def validate_file(file_path):
@@ -27,7 +28,7 @@ while filename is not None:
             print("Please try again!")
             filename = input("File path or type 'exit' to close: ")
     except:
-        if filename .startswith('exit'):
+        if filename.startswith('exit'):
             break
         else:
             print('Fisierul nu exista!')

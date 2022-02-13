@@ -181,7 +181,6 @@ data = {
             "rItgc45AmdU", "XlB277xDxzw"]
 }
 
-
 output_class = ['battery', 'biological', 'brown-glass', 'cardboard', 'clothes', 'e-waste', 'green-glass', 'light-bulbs',
                 'metal', 'paper', 'plastic', 'shoes', 'trash', 'white-glass', 'unrated']
 
@@ -205,17 +204,28 @@ def load_artifacts():
 
 
 def classify_waste(image_path):
+    results = {}
     test_image = tf.keras.preprocessing.image.load_img(image_path, target_size=(224, 224))
     test_image = tf.keras.preprocessing.image.img_to_array(test_image) / 255
     test_image = np.expand_dims(test_image, axis=0)
     for model in models:
         result = model.predict(test_image)
         result = list(result[0])
-        img_index = result.index(max(result))
-    probability = round(result[img_index] * 100, 2)
+        index = result.index(max(result))
+        results[round(result[index] * 100, 2)] = index
+        #todo try with lists and try to check if are to close and different classes
+        logging.warning(
+            "Tentativa:" + output_class[index] + "--probabilitate: " + str(round(result[index] * 100, 2)) + "%")
 
+   # results_values = list(results.values())
+    results_key = list(results.keys())
+
+    probability = max(results_key)
+    max_index = results.get(probability)
+
+    logging.warning("Final:" + output_class[max_index] + "......" + str(probability))
     if probability >= 60:
-        predicted_value = output_class[img_index]
+        predicted_value = output_class[max_index]
         print(predicted_value)
         logging.warning("Predicted class is " + predicted_value + " for uploaded image with path " + image_path +
                         " probability :" + str(probability) + "%")
@@ -223,13 +233,13 @@ def classify_waste(image_path):
                data[predicted_value][3], probability
     else:
         logging.warning(
-            "Predicted class is " + output_class[img_index] + " for uploaded image with path " + image_path +
+            "Predicted class is " + output_class[max_index] + " for uploaded image with path " + image_path +
             " !!! But is classified as unrated due to probability :" + str(probability) + "% ")
         predicted_value = output_class[14]
         print(predicted_value)
         logging.warning("Unable to predict classification for uploaded image with path " + image_path +
                         " because the probability was only:" + str(probability) + "% for class:" + output_class[
-                            img_index])
+                            max_index])
 
         return predicted_value, data[predicted_value][0], data[predicted_value][1], data[predicted_value][2], \
                data[predicted_value][3], probability

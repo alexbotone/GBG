@@ -65,10 +65,7 @@ def upload_file():
             basepath = os.path.dirname(__file__)
             image_path = os.path.join(basepath, "uploads", secure_filename(file.filename))
             file.save(image_path)
-
-            if TOGGLE_SAVE_IMAGES():
-                logging.warning("Image saved")
-                file.save(os.path.join(application.config['/static/new-uploads'], filename))
+            file.save(os.path.join(application.config['/static/new-uploads'], filename))
 
             success = True
         else:
@@ -132,7 +129,7 @@ def classifywaste_api():
         if file and allowed_file(file.filename):
             filename = secure_filename(file.filename)
             basepath = os.path.dirname(__file__)
-            image_path = os.path.join(basepath, "uploads", secure_filename(file.filename))
+            image_path = os.path.join(basepath, "static/new_uploads", secure_filename(file.filename))
             file.save(image_path)
             success = True
         else:
